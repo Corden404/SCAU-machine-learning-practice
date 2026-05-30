@@ -1,0 +1,7 @@
+{
+  "data_root": "D:/path/to/local/data",
+  "datasets": {
+    "ionosphere": "机器学习/电离层数据.zip",
+    "cats_vs_dogs": "AlexNet/Cats vs. Dogs.zip"
+  }
+}
