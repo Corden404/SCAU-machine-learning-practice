@@ -7,8 +7,6 @@
 - **任务二：Cats vs. Dogs 图像分类**  
   手动实现 AlexNet，对猫狗图片进行训练、验证和测试，并记录调参、改进与反思过程。
 
-项目当前重点已经从“直接训练模型”前移到“先把数据质量和实验流程整理清楚”。原始数据、私有路径、大体量中间产物和审核结果默认不提交到仓库。
-
 ## 当前进度
 
 - 已建立本地数据路径配置机制，代码不硬编码本机绝对路径。
@@ -34,77 +32,9 @@
 │   ├── cats_anomaly_review_gui.py     # 本地异常图片审核 Web 工具
 │   ├── build_static_review_package.py # 生成异常图片静态审核包
 │   └── build_duplicate_review_package.py # 生成重复图片审核包
-├── docs/                              # 工作总结、分析记录等本地文档
-├── exp/                               # 实验输出、图表和分析报告
+├── docs/                              # 工作总结、分析记录等本地文档，不提交
+├── exp/                               # 实验代码目录，仅提交其中的 .py 脚本
 └── data/                              # 清洗中间结果、审核结果等本地数据
-```
-
-其中 `data/`、`exp/`、`docs/` 以及 `config/paths.local.json` 默认是本地工作产物。仓库主要提交流程、代码和可公开的配置模板。
-
-## 环境准备
-
-按照项目约定，Python 开发默认使用 `dev` 环境：
-
-```powershell
-conda activate dev
-```
-
-如果后续需要安装新包，优先使用清华源。当前脚本主要依赖常见的数据分析与图像处理库，例如 `numpy`、`pandas`、`Pillow`、`scikit-learn`、`matplotlib`。
-
-## 数据路径配置
-
-不要在代码中写入本机绝对路径。首次运行前复制配置模板：
-
-```powershell
-Copy-Item config\paths.example.json config\paths.local.json
-```
-
-然后在 `config/paths.local.json` 中填写本机数据根目录。代码通过 `src/project_config.py` 读取配置，例如：
-
-```python
-from src.project_config import get_dataset_path
-
-ionosphere_path = get_dataset_path("ionosphere")
-cats_vs_dogs_path = get_dataset_path("cats_vs_dogs")
-```
-
-这样可以在本地快速读取数据，同时避免把私人路径提交到仓库。
-
-## 常用命令
-
-数据预分析：
-
-```powershell
-conda activate dev
-python -m src.data_preanalysis --only all
-```
-
-猫狗异常图片检测：
-
-```powershell
-conda activate dev
-python -m src.cats_anomaly_detection --top-fraction 0.03 --reuse-features
-```
-
-启动本地异常图片审核工具：
-
-```powershell
-conda activate dev
-python -m src.cats_anomaly_review_gui --port 8765
-```
-
-生成可分发的异常图片静态审核包：
-
-```powershell
-conda activate dev
-python -m src.build_static_review_package --zip-path path\to\cats_anomaly_review_package.zip
-```
-
-生成重复图片审核包：
-
-```powershell
-conda activate dev
-python -m src.build_duplicate_review_package --zip-path path\to\cats_duplicate_review_package.zip
 ```
 
 ## 数据质量策略
@@ -138,18 +68,3 @@ Cats vs. Dogs：
 - Cat 与 Dog 各 12500 张，类别整体平衡。
 - 图片模式和尺寸不完全统一，训练前需要统一转为 RGB 并 resize/crop 到模型输入尺寸。
 - 数据集中存在纯文字、低信息、重复、跨标签重复等质量问题，已经建立候选检测与人工审核流程。
-
-## 下一步
-
-1. 合并异常图片人工审核结果，形成最终异常排除清单。
-2. 合并损坏图片、异常图片、重复图片处理结果，生成 `train_manifest.csv`、`val_manifest.csv`、`test_manifest.csv` 和 `excluded_images.csv`。
-3. 开始 Ionosphere 传统机器学习建模，保存模型对比表、混淆矩阵、ROC 曲线和实验反思。
-4. 实现 AlexNet 数据集读取、训练、验证和测试流程。
-5. 在 AlexNet 上进行改进实验，例如数据增强、Batch Normalization、Dropout、学习率调整和全连接层规模调整。
-6. 汇总实验结果，整理 Word 报告与答辩 PPT。
-
-## 注意事项
-
-- 异常图片相关输出统一保存在 `data/AlexNet/Anomaly/`。
-- 所有清洗策略都应可复现：记录原因、保留清单，不直接改动原始数据。
-- 如果需要删除或替换文件，默认先移动到 `.trash/`，除非已经明确确认可以安全删除。
