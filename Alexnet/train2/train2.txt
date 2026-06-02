@@ -1,0 +1,78 @@
+使用设备: cuda
+训练集: 19968 张, 验证集: 4993 张
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  1/20 | Train Loss: 0.6227, Train Acc: 0.6448 | Val Loss: 0.5366, Val Acc: 0.7228
+  -> 保存最佳模型 (val_acc=0.7228)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  2/20 | Train Loss: 0.4884, Train Acc: 0.7629 | Val Loss: 0.4167, Val Acc: 0.8067
+  -> 保存最佳模型 (val_acc=0.8067)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  3/20 | Train Loss: 0.3861, Train Acc: 0.8284 | Val Loss: 0.3402, Val Acc: 0.8476
+  -> 保存最佳模型 (val_acc=0.8476)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  4/20 | Train Loss: 0.3174, Train Acc: 0.8636 | Val Loss: 0.2867, Val Acc: 0.8738
+  -> 保存最佳模型 (val_acc=0.8738)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  5/20 | Train Loss: 0.2668, Train Acc: 0.8854 | Val Loss: 0.2628, Val Acc: 0.8832
+  -> 保存最佳模型 (val_acc=0.8832)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  6/20 | Train Loss: 0.2394, Train Acc: 0.8979 | Val Loss: 0.2524, Val Acc: 0.8820
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  7/20 | Train Loss: 0.2112, Train Acc: 0.9093 | Val Loss: 0.2528, Val Acc: 0.8955
+  -> 保存最佳模型 (val_acc=0.8955)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  8/20 | Train Loss: 0.1926, Train Acc: 0.9198 | Val Loss: 0.2312, Val Acc: 0.8997
+  -> 保存最佳模型 (val_acc=0.8997)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch  9/20 | Train Loss: 0.1704, Train Acc: 0.9307 | Val Loss: 0.2228, Val Acc: 0.9109
+  -> 保存最佳模型 (val_acc=0.9109)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 10/20 | Train Loss: 0.1511, Train Acc: 0.9393 | Val Loss: 0.2009, Val Acc: 0.9131
+  -> 保存最佳模型 (val_acc=0.9131)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 11/20 | Train Loss: 0.1382, Train Acc: 0.9431 | Val Loss: 0.2189, Val Acc: 0.9113
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 12/20 | Train Loss: 0.1267, Train Acc: 0.9501 | Val Loss: 0.2045, Val Acc: 0.9159
+  -> 保存最佳模型 (val_acc=0.9159)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 13/20 | Train Loss: 0.1154, Train Acc: 0.9554 | Val Loss: 0.2168, Val Acc: 0.9179
+  -> 保存最佳模型 (val_acc=0.9179)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 14/20 | Train Loss: 0.1000, Train Acc: 0.9610 | Val Loss: 0.2701, Val Acc: 0.9121
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 15/20 | Train Loss: 0.0910, Train Acc: 0.9648 | Val Loss: 0.2191, Val Acc: 0.9253
+  -> 保存最佳模型 (val_acc=0.9253)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 16/20 | Train Loss: 0.0794, Train Acc: 0.9691 | Val Loss: 0.2287, Val Acc: 0.9153
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 17/20 | Train Loss: 0.0771, Train Acc: 0.9702 | Val Loss: 0.2306, Val Acc: 0.9217
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 18/20 | Train Loss: 0.0717, Train Acc: 0.9720 | Val Loss: 0.2398, Val Acc: 0.9227
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 19/20 | Train Loss: 0.0648, Train Acc: 0.9761 | Val Loss: 0.2166, Val Acc: 0.9263
+  -> 保存最佳模型 (val_acc=0.9263)
+/home/hxloong/.local/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 20/20 | Train Loss: 0.0582, Train Acc: 0.9788 | Val Loss: 0.2411, Val Acc: 0.9255
+
+训练完成，最佳验证准确率: 0.9263
+训练曲线已保存至: ./training_curves.png
