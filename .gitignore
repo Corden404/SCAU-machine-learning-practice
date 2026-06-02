@@ -15,3 +15,16 @@
 !exp/
 !exp/**/
 !exp/**/*.py
+!Alexnet/
+!Alexnet/*.py
+!Alexnet/train1/
+!Alexnet/train1/train1.txt
+!Alexnet/train1/training_curves.png
+!Alexnet/train2/
+!Alexnet/train2/train2.txt
+!Alexnet/train2/training_curves.png
+
+data/
+PetImages/
+__pycache__/
+.claude/
