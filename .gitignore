@@ -1,30 +1,17 @@
+# Ignore every file by default.
 *
+
+# Keep directories visible so nested Python files can be unignored.
+!*/
+
+# Track only Git ignore rules and Python source files.
 !.gitignore
-!Readme.md
-!流程.md
-!config/
-!config/paths.example.json
-!src/
-!src/__init__.py
-!src/project_config.py
-!src/data_preanalysis.py
-!src/cats_anomaly_detection.py
-!src/cats_anomaly_review_gui.py
-!src/build_static_review_package.py
-!src/build_duplicate_review_package.py
-!exp/
-!exp/**/
-!exp/**/*.py
-!Alexnet/
-!Alexnet/*.py
-!Alexnet/train1/
-!Alexnet/train1/train1.txt
-!Alexnet/train1/training_curves.png
-!Alexnet/train2/
-!Alexnet/train2/train2.txt
-!Alexnet/train2/training_curves.png
+!*.py
+!**/*.py
 
 data/
 PetImages/
 __pycache__/
+*.pyc
+*.log
 .claude/
