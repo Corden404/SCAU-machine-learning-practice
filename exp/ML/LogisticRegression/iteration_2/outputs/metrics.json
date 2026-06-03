@@ -1,0 +1,43 @@
+{
+  "model": "LogisticRegression",
+  "iteration": "iteration_2",
+  "note": "Enhanced LogisticRegression with constant-feature removal, standardization, 5-fold CV, and repeated stratified splits.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "LogisticRegression",
+    "iteration": "iteration_2",
+    "seed": 42,
+    "train_accuracy": 0.9321428571428572,
+    "train_precision": 0.925531914893617,
+    "train_recall": 0.9720670391061452,
+    "train_f1": 0.9482288828337875,
+    "train_roc_auc": 0.9797002046573372,
+    "test_accuracy": 0.9295774647887324,
+    "test_precision": 0.9183673469387755,
+    "test_recall": 0.9782608695652174,
+    "test_f1": 0.9473684210526315,
+    "test_roc_auc": 0.9243478260869565
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

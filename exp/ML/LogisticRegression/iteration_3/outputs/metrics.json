@@ -1,0 +1,80 @@
+{
+  "model": "LogisticRegression",
+  "iteration": "iteration_3",
+  "note": "LogisticRegression with constant-feature removal, StandardScaler, class_weight='balanced', and C selected by 5-fold CV macro F1 from [0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0]. Best C=3.0.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "LogisticRegression",
+    "iteration": "iteration_3",
+    "seed": 42,
+    "train_accuracy": 0.925,
+    "train_precision": 0.9488636363636364,
+    "train_recall": 0.9329608938547486,
+    "train_f1": 0.9408450704225352,
+    "train_roc_auc": 0.9835721002267824,
+    "test_accuracy": 0.8732394366197183,
+    "test_precision": 0.8936170212765957,
+    "test_recall": 0.9130434782608695,
+    "test_f1": 0.9032258064516129,
+    "test_roc_auc": 0.8982608695652174
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model_selection": {
+    "candidate_C_values": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "selection_metric": "macro_f1_mean, then recall_b_mean, then accuracy_mean",
+    "best_C": 3.0,
+    "best_row": {
+      "index": 5.0,
+      "C": 3.0,
+      "fold_mean": 3.0,
+      "fold_std": 1.5811388300841898,
+      "accuracy_mean": 0.8773843058350101,
+      "accuracy_std": 0.04609503812105112,
+      "precision_b_mean": 0.8528831168831168,
+      "precision_b_std": 0.04447918284085164,
+      "recall_b_mean": 0.7926153846153847,
+      "recall_b_std": 0.11540717728134303,
+      "f1_b_mean": 0.8194042553191488,
+      "f1_b_std": 0.07759873332355988,
+      "precision_g_mean": 0.8913643410852714,
+      "precision_g_std": 0.05503930321000332,
+      "recall_g_mean": 0.9244444444444444,
+      "recall_g_std": 0.019876159799998166,
+      "f1_g_mean": 0.9069522045583167,
+      "f1_g_std": 0.03234562127387678,
+      "macro_f1_mean": 0.8631782299387328,
+      "macro_f1_std": 0.05490451817911152,
+      "roc_auc_mean": 0.8828376068376068,
+      "roc_auc_std": 0.08760913067668162
+    }
+  }
+}

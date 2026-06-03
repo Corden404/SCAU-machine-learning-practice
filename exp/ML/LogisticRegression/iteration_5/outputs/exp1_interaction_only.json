@@ -1,0 +1,22 @@
+[
+  {
+    "variant":"full_poly2",
+    "n_features":594,
+    "best_penalty":"l2",
+    "best_C":3.0,
+    "best_cv_macro_f1":0.9396139889,
+    "mean_test_recall_b":0.8803076923,
+    "mean_test_f1_b":0.9203692115,
+    "mean_test_accuracy":0.9457545272
+  },
+  {
+    "variant":"interaction_only",
+    "n_features":561,
+    "best_penalty":"l2",
+    "best_C":0.01,
+    "best_cv_macro_f1":0.9002448748,
+    "mean_test_recall_b":0.8086153846,
+    "mean_test_f1_b":0.8667456059,
+    "mean_test_accuracy":0.9115090543
+  }
+]

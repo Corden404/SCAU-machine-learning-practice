@@ -1,0 +1,6 @@
+﻿model,iteration,seed,train_accuracy,train_precision,train_recall,train_f1,train_roc_auc,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,fold
+RandomForest,iteration_6_class_weight_balanced_subsample,42,1.0,1.0,1.0,1.0,1.0,0.9295774647887324,0.9,1.0,0.9473684210526315,0.994017094017094,1
+RandomForest,iteration_6_class_weight_balanced_subsample,42,1.0,1.0,1.0,1.0,1.0,0.9571428571428572,0.9375,1.0,0.967741935483871,0.975111111111111,2
+RandomForest,iteration_6_class_weight_balanced_subsample,42,1.0,1.0,1.0,1.0,1.0,0.9142857142857143,0.9148936170212766,0.9555555555555556,0.9347826086956522,0.976,3
+RandomForest,iteration_6_class_weight_balanced_subsample,42,1.0,1.0,1.0,1.0,1.0,0.9857142857142858,0.9782608695652174,1.0,0.989010989010989,0.9857777777777778,4
+RandomForest,iteration_6_class_weight_balanced_subsample,42,1.0,1.0,1.0,1.0,1.0,0.8857142857142857,0.9111111111111111,0.9111111111111111,0.9111111111111111,0.9475555555555555,5

@@ -1,0 +1,43 @@
+{
+  "model": "DecisionTree",
+  "iteration": "iteration_2",
+  "note": "Enhanced DecisionTree with max_depth=4 and min_samples_leaf=5 to reduce overfitting on the small Ionosphere dataset.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "DecisionTree",
+    "iteration": "iteration_2",
+    "seed": 42,
+    "train_accuracy": 0.9357142857142857,
+    "train_precision": 0.9398907103825137,
+    "train_recall": 0.9608938547486033,
+    "train_f1": 0.9502762430939227,
+    "train_roc_auc": 0.9708778140383871,
+    "test_accuracy": 0.9154929577464789,
+    "test_precision": 0.9347826086956522,
+    "test_recall": 0.9347826086956522,
+    "test_f1": 0.9347826086956522,
+    "test_roc_auc": 0.9604347826086956
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}
