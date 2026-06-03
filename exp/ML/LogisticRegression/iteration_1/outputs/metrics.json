@@ -1,0 +1,35 @@
+{
+  "model": "LogisticRegression",
+  "iteration": "iteration_1",
+  "note": "Default-parameter LogisticRegression baseline on the original Ionosphere features.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "LogisticRegression",
+    "iteration": "iteration_1",
+    "seed": 42,
+    "train_accuracy": 0.9,
+    "train_precision": 0.8911917098445595,
+    "train_recall": 0.9608938547486033,
+    "train_f1": 0.9247311827956989,
+    "train_roc_auc": 0.9702417169091211,
+    "test_accuracy": 0.9295774647887324,
+    "test_precision": 0.9183673469387755,
+    "test_recall": 0.9782608695652174,
+    "test_f1": 0.9473684210526315,
+    "test_roc_auc": 0.9643478260869565
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "AdaBoost",
+  "iteration": "iteration_2",
+  "note": "Enhanced AdaBoost with a smaller learning_rate=0.5, plus 5-fold CV and repeated stratified splits to inspect sensitivity to difficult or outlier-like samples.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "AdaBoost",
+    "iteration": "iteration_2",
+    "seed": 42,
+    "train_accuracy": 0.9535714285714286,
+    "train_precision": 0.9368421052631579,
+    "train_recall": 0.994413407821229,
+    "train_f1": 0.964769647696477,
+    "train_roc_auc": 0.9894905691686487,
+    "test_accuracy": 0.9436619718309859,
+    "test_precision": 0.9375,
+    "test_recall": 0.9782608695652174,
+    "test_f1": 0.9574468085106383,
+    "test_roc_auc": 0.9639130434782609
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

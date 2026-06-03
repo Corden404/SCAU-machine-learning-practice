@@ -1,0 +1,30 @@
+{
+  "fixed_model": {
+    "pipeline": "StandardScaler + RBF SVC",
+    "C": 3.0,
+    "gamma": 0.03,
+    "class_weight": "balanced"
+  },
+  "threshold_selection": "5-fold out-of-fold decision_function scores on the training data of each fit",
+  "reference_full_data_oof": {
+    "candidate_count": 353,
+    "best_threshold_metrics": {
+      "threshold": 0.0,
+      "macro_f1": 0.9563556913457439,
+      "accuracy": 0.9601139601139601,
+      "b_recall": 0.9285714285714286,
+      "b_f1": 0.9435483870967742,
+      "g_recall": 0.9777777777777777,
+      "g_f1": 0.9691629955947136
+    },
+    "default_threshold_metrics": {
+      "threshold": 0.0,
+      "macro_f1": 0.9563556913457439,
+      "accuracy": 0.9601139601139601,
+      "b_recall": 0.9285714285714286,
+      "b_f1": 0.9435483870967742,
+      "g_recall": 0.9777777777777777,
+      "g_f1": 0.9691629955947136
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": "SVM",
+  "iteration": "iteration_1",
+  "note": "Default-parameter SVM baseline with the original feature scale.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "SVM",
+    "iteration": "iteration_1",
+    "seed": 42,
+    "train_accuracy": 0.9642857142857143,
+    "train_precision": 0.9567567567567568,
+    "train_recall": 0.9888268156424581,
+    "train_f1": 0.9725274725274725,
+    "train_roc_auc": 0.991869019304165,
+    "test_accuracy": 0.9577464788732394,
+    "test_precision": 0.9574468085106383,
+    "test_recall": 0.9782608695652174,
+    "test_f1": 0.967741935483871,
+    "test_roc_auc": 0.9704347826086956
+  }
+}

@@ -1,0 +1,2 @@
+﻿model,iteration,seed,train_accuracy,train_precision,train_recall,train_f1,train_roc_auc,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc
+AdaBoost,iteration_2,42,0.9535714285714286,0.9368421052631579,0.994413407821229,0.964769647696477,0.9894905691686487,0.9436619718309859,0.9375,0.9782608695652174,0.9574468085106383,0.9639130434782609

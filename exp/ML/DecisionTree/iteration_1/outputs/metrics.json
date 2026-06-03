@@ -1,0 +1,35 @@
+{
+  "model": "DecisionTree",
+  "iteration": "iteration_1",
+  "note": "Default-parameter DecisionTree baseline.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "DecisionTree",
+    "iteration": "iteration_1",
+    "seed": 42,
+    "train_accuracy": 1.0,
+    "train_precision": 1.0,
+    "train_recall": 1.0,
+    "train_f1": 1.0,
+    "train_roc_auc": 1.0,
+    "test_accuracy": 0.9014084507042254,
+    "test_precision": 0.9333333333333333,
+    "test_recall": 0.9130434782608695,
+    "test_f1": 0.9230769230769231,
+    "test_roc_auc": 0.8965217391304349
+  }
+}

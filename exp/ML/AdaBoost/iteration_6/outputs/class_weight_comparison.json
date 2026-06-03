@@ -1,0 +1,88 @@
+{
+  "None": {
+    "model": "AdaBoost",
+    "iteration": "iteration_6_class_weight_None",
+    "note": "AdaBoost with best params from iteration_4, base estimator class_weight=None. Comparison: None vs 'balanced'. (b:g ≈ 36:64, moderate imbalance). Note: iteration_4 GridSearchCV found class_weight=None performed best; this iteration re-runs both for a direct single-split + CV + repeated comparison.",
+    "random_seed": 42,
+    "test_size": 0.2,
+    "labels": [
+      "b",
+      "g"
+    ],
+    "positive_label": "g",
+    "data": {
+      "sample_count": 351,
+      "feature_count": 34,
+      "label_counts": {
+        "b": 126,
+        "g": 225
+      }
+    },
+    "single_split_metrics": {
+      "model": "AdaBoost",
+      "iteration": "iteration_6_class_weight_None",
+      "seed": 42,
+      "train_accuracy": 1.0,
+      "train_precision": 1.0,
+      "train_recall": 1.0,
+      "train_f1": 1.0,
+      "train_roc_auc": 1.0,
+      "test_accuracy": 0.9577464788732394,
+      "test_precision": 0.9574468085106383,
+      "test_recall": 0.9782608695652174,
+      "test_f1": 0.967741935483871,
+      "test_roc_auc": 0.9652173913043479
+    },
+    "cv_folds": 5,
+    "repeated_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "balanced": {
+    "model": "AdaBoost",
+    "iteration": "iteration_6_class_weight_balanced",
+    "note": "AdaBoost with best params from iteration_4, base estimator class_weight='balanced'. Comparison: None vs 'balanced'. (b:g ≈ 36:64, moderate imbalance). Note: iteration_4 GridSearchCV found class_weight=None performed best; this iteration re-runs both for a direct single-split + CV + repeated comparison.",
+    "random_seed": 42,
+    "test_size": 0.2,
+    "labels": [
+      "b",
+      "g"
+    ],
+    "positive_label": "g",
+    "data": {
+      "sample_count": 351,
+      "feature_count": 34,
+      "label_counts": {
+        "b": 126,
+        "g": 225
+      }
+    },
+    "single_split_metrics": {
+      "model": "AdaBoost",
+      "iteration": "iteration_6_class_weight_balanced",
+      "seed": 42,
+      "train_accuracy": 0.9464285714285714,
+      "train_precision": 0.9226804123711341,
+      "train_recall": 1.0,
+      "train_f1": 0.9597855227882037,
+      "train_roc_auc": 0.9878035289562476,
+      "test_accuracy": 0.9577464788732394,
+      "test_precision": 0.9574468085106383,
+      "test_recall": 0.9782608695652174,
+      "test_f1": 0.967741935483871,
+      "test_roc_auc": 0.9856521739130435
+    },
+    "cv_folds": 5,
+    "repeated_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

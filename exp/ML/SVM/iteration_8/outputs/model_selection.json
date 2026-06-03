@@ -1,0 +1,48 @@
+{
+  "candidate_C_values": [
+    1.0,
+    3.0,
+    10.0
+  ],
+  "candidate_gamma_values": [
+    0.01,
+    0.03,
+    0.1
+  ],
+  "candidate_class_weight_values": [
+    "balanced"
+  ],
+  "pca_variance_values": [
+    0.9,
+    0.95,
+    0.99
+  ],
+  "selection_metric": "mean_test_macro_f1",
+  "candidate_count": 36,
+  "best_score_macro_f1": 0.9529672710023341,
+  "best_params": {
+    "classifier__C": 3.0,
+    "classifier__class_weight": "balanced",
+    "classifier__gamma": 0.03,
+    "classifier__kernel": "rbf"
+  },
+  "selected_variant": "RobustScaler only",
+  "pca_n_components_param": null,
+  "pca_n_components_actual": null,
+  "best_cv_accuracy": 0.9572635814889336,
+  "best_cv_recall_b": 0.912923076923077,
+  "best_cv_roc_auc": 0.9838632478632479,
+  "variant_summary": {
+    "RobustScaler only": {
+      "cv_macro_f1": 0.9529672710023341,
+      "C": 3.0,
+      "gamma": 0.03
+    },
+    "RobustScaler + PCA": {
+      "cv_macro_f1": 0.9499635889271147,
+      "pca_n_components": 0.99,
+      "C": 3.0,
+      "gamma": 0.03
+    }
+  }
+}
