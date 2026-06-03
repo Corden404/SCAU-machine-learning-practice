@@ -1,0 +1,144 @@
+{
+  "fixed_ccp_alpha": 0.00852480852480852,
+  "candidate_criterion_values": [
+    "gini",
+    "entropy",
+    "log_loss"
+  ],
+  "selection_metric": "mean_test_macro_f1",
+  "best_score_macro_f1": 0.8946494637212042,
+  "best_params": {
+    "criterion": "entropy"
+  },
+  "best_tree_summary": {
+    "depth": 8,
+    "leaf_count": 21,
+    "top_features": [
+      {
+        "feature": "f5",
+        "importance": 0.3667181196686612
+      },
+      {
+        "feature": "f27",
+        "importance": 0.2178893608926285
+      },
+      {
+        "feature": "f3",
+        "importance": 0.08623474923262309
+      },
+      {
+        "feature": "f4",
+        "importance": 0.05032373673963172
+      },
+      {
+        "feature": "f10",
+        "importance": 0.035161870998934065
+      },
+      {
+        "feature": "f8",
+        "importance": 0.03091735929086896
+      },
+      {
+        "feature": "f1",
+        "importance": 0.030151657143609862
+      },
+      {
+        "feature": "f24",
+        "importance": 0.02892588093597643
+      },
+      {
+        "feature": "f7",
+        "importance": 0.02831287596773686
+      },
+      {
+        "feature": "f29",
+        "importance": 0.026007143776110773
+      }
+    ]
+  },
+  "best_row": {
+    "mean_fit_time": 0.010820531845092773,
+    "std_fit_time": 0.0003700880791878797,
+    "mean_score_time": 0.00994424819946289,
+    "std_score_time": 0.0011460830784787769,
+    "param_criterion": "entropy",
+    "params": {
+      "criterion": "entropy"
+    },
+    "split0_test_macro_f1": 0.908974358974359,
+    "split1_test_macro_f1": 0.8920467063229787,
+    "split2_test_macro_f1": 0.9048913043478262,
+    "split3_test_macro_f1": 0.9228905045164133,
+    "split4_test_macro_f1": 0.8444444444444444,
+    "mean_test_macro_f1": 0.8946494637212042,
+    "std_test_macro_f1": 0.02696283596094996,
+    "rank_test_macro_f1": 1,
+    "split0_train_macro_f1": 1.0,
+    "split1_train_macro_f1": 1.0,
+    "split2_train_macro_f1": 1.0,
+    "split3_train_macro_f1": 1.0,
+    "split4_train_macro_f1": 1.0,
+    "mean_train_macro_f1": 1.0,
+    "std_train_macro_f1": 0.0,
+    "split0_test_f1_b": 0.8846153846153846,
+    "split1_test_f1_b": 0.8627450980392157,
+    "split2_test_f1_b": 0.875,
+    "split3_test_f1_b": 0.9019607843137255,
+    "split4_test_f1_b": 0.8,
+    "mean_test_f1_b": 0.8648642533936652,
+    "std_test_f1_b": 0.034873644311549344,
+    "rank_test_f1_b": 1,
+    "split0_train_f1_b": 1.0,
+    "split1_train_f1_b": 1.0,
+    "split2_train_f1_b": 1.0,
+    "split3_train_f1_b": 1.0,
+    "split4_train_f1_b": 1.0,
+    "mean_train_f1_b": 1.0,
+    "std_train_f1_b": 0.0,
+    "split0_test_recall_b": 0.8846153846153846,
+    "split1_test_recall_b": 0.88,
+    "split2_test_recall_b": 0.84,
+    "split3_test_recall_b": 0.92,
+    "split4_test_recall_b": 0.8,
+    "mean_test_recall_b": 0.8649230769230769,
+    "std_test_recall_b": 0.04119401346751892,
+    "rank_test_recall_b": 1,
+    "split0_train_recall_b": 1.0,
+    "split1_train_recall_b": 1.0,
+    "split2_train_recall_b": 1.0,
+    "split3_train_recall_b": 1.0,
+    "split4_train_recall_b": 1.0,
+    "mean_train_recall_b": 1.0,
+    "std_train_recall_b": 0.0,
+    "split0_test_accuracy": 0.9154929577464789,
+    "split1_test_accuracy": 0.9,
+    "split2_test_accuracy": 0.9142857142857143,
+    "split3_test_accuracy": 0.9285714285714286,
+    "split4_test_accuracy": 0.8571428571428571,
+    "mean_test_accuracy": 0.9030985915492957,
+    "std_test_accuracy": 0.02469481017918626,
+    "rank_test_accuracy": 1,
+    "split0_train_accuracy": 1.0,
+    "split1_train_accuracy": 1.0,
+    "split2_train_accuracy": 1.0,
+    "split3_train_accuracy": 1.0,
+    "split4_train_accuracy": 1.0,
+    "mean_train_accuracy": 1.0,
+    "std_train_accuracy": 0.0,
+    "split0_test_roc_auc": 0.908974358974359,
+    "split1_test_roc_auc": 0.8955555555555554,
+    "split2_test_roc_auc": 0.8977777777777778,
+    "split3_test_roc_auc": 0.9266666666666667,
+    "split4_test_roc_auc": 0.8444444444444444,
+    "mean_test_roc_auc": 0.8946837606837607,
+    "std_test_roc_auc": 0.027427903087495556,
+    "rank_test_roc_auc": 1,
+    "split0_train_roc_auc": 1.0,
+    "split1_train_roc_auc": 1.0,
+    "split2_train_roc_auc": 1.0,
+    "split3_train_roc_auc": 1.0,
+    "split4_train_roc_auc": 1.0,
+    "mean_train_roc_auc": 1.0,
+    "std_train_roc_auc": 0.0
+  }
+}

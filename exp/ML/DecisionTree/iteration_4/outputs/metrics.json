@@ -1,0 +1,202 @@
+{
+  "model": "DecisionTree",
+  "iteration": "iteration_4",
+  "note": "DecisionTree with fixed ccp_alpha from iteration_3 and GridSearchCV over max_depth and min_samples_leaf. Best params: {'max_depth': 8, 'min_samples_leaf': 1}.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "DecisionTree",
+    "iteration": "iteration_4",
+    "seed": 42,
+    "train_accuracy": 0.9535714285714286,
+    "train_precision": 0.9510869565217391,
+    "train_recall": 0.9776536312849162,
+    "train_f1": 0.9641873278236914,
+    "train_roc_auc": 0.9497759831849107,
+    "test_accuracy": 0.9295774647887324,
+    "test_precision": 0.9555555555555556,
+    "test_recall": 0.9347826086956522,
+    "test_f1": 0.945054945054945,
+    "test_roc_auc": 0.9373913043478261
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model_selection": {
+    "fixed_ccp_alpha": 0.00852480852480852,
+    "candidate_max_depth_values": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      null
+    ],
+    "candidate_min_samples_leaf_values": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      10
+    ],
+    "selection_metric": "mean_test_macro_f1",
+    "best_score_macro_f1": 0.8941211503851874,
+    "best_params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    },
+    "best_tree_summary": {
+      "depth": 7,
+      "leaf_count": 13,
+      "top_features": [
+        {
+          "feature": "f5",
+          "importance": 0.47760510449291643
+        },
+        {
+          "feature": "f27",
+          "importance": 0.2774062063594357
+        },
+        {
+          "feature": "f7",
+          "importance": 0.05522702684665326
+        },
+        {
+          "feature": "f3",
+          "importance": 0.036693268599896585
+        },
+        {
+          "feature": "f14",
+          "importance": 0.0324731156819678
+        },
+        {
+          "feature": "f8",
+          "importance": 0.026820501249994806
+        },
+        {
+          "feature": "f1",
+          "importance": 0.026109568923978036
+        },
+        {
+          "feature": "f4",
+          "importance": 0.023270786153157686
+        },
+        {
+          "feature": "f16",
+          "importance": 0.022866485626052327
+        },
+        {
+          "feature": "f6",
+          "importance": 0.021527936065947408
+        }
+      ]
+    },
+    "best_row": {
+      "mean_fit_time": 0.016749238967895506,
+      "std_fit_time": 0.011562556735001618,
+      "mean_score_time": 0.02151031494140625,
+      "std_score_time": 0.001958729640382237,
+      "param_max_depth": 8,
+      "param_min_samples_leaf": 1,
+      "params": {
+        "max_depth": 8,
+        "min_samples_leaf": 1
+      },
+      "split0_test_macro_f1": 0.9073913043478261,
+      "split1_test_macro_f1": 0.9215070643642072,
+      "split2_test_macro_f1": 0.8558682223747426,
+      "split3_test_macro_f1": 0.9388111888111889,
+      "split4_test_macro_f1": 0.8470279720279721,
+      "mean_test_macro_f1": 0.8941211503851874,
+      "std_test_macro_f1": 0.03634374431544625,
+      "rank_test_macro_f1": 1,
+      "split0_train_macro_f1": 0.9529042386185244,
+      "split1_train_macro_f1": 0.9491968569640499,
+      "split2_train_macro_f1": 0.9489554950045413,
+      "split3_train_macro_f1": 0.984475138121547,
+      "split4_train_macro_f1": 0.9767127071823205,
+      "mean_train_macro_f1": 0.9624488871781967,
+      "std_train_macro_f1": 0.015082443734394371,
+      "split0_test_f1_b": 0.88,
+      "split1_test_f1_b": 0.8979591836734694,
+      "split2_test_f1_b": 0.8085106382978723,
+      "split3_test_f1_b": 0.9230769230769231,
+      "split4_test_f1_b": 0.8076923076923077,
+      "mean_test_f1_b": 0.8634478105481145,
+      "std_test_f1_b": 0.047217390663141394,
+      "rank_test_f1_b": 1,
+      "split0_train_f1_b": 0.9387755102040817,
+      "split1_train_f1_b": 0.934010152284264,
+      "split2_train_f1_b": 0.9333333333333333,
+      "split3_train_f1_b": 0.98,
+      "split4_train_f1_b": 0.97,
+      "mean_train_f1_b": 0.9512237991643359,
+      "std_train_f1_b": 0.019758308414212656,
+      "split0_test_recall_b": 0.8461538461538461,
+      "split1_test_recall_b": 0.88,
+      "split2_test_recall_b": 0.76,
+      "split3_test_recall_b": 0.96,
+      "split4_test_recall_b": 0.84,
+      "mean_test_recall_b": 0.8572307692307692,
+      "std_test_recall_b": 0.06473541964190097,
+      "rank_test_recall_b": 4,
+      "split0_train_recall_b": 0.92,
+      "split1_train_recall_b": 0.9108910891089109,
+      "split2_train_recall_b": 0.900990099009901,
+      "split3_train_recall_b": 0.9702970297029703,
+      "split4_train_recall_b": 0.9603960396039604,
+      "mean_train_recall_b": 0.9325148514851485,
+      "std_train_recall_b": 0.027650939468396925,
+      "split0_test_accuracy": 0.9154929577464789,
+      "split1_test_accuracy": 0.9285714285714286,
+      "split2_test_accuracy": 0.8714285714285714,
+      "split3_test_accuracy": 0.9428571428571428,
+      "split4_test_accuracy": 0.8571428571428571,
+      "mean_test_accuracy": 0.9030985915492957,
+      "std_test_accuracy": 0.03316066296311622,
+      "rank_test_accuracy": 1,
+      "split0_train_accuracy": 0.9571428571428572,
+      "split1_train_accuracy": 0.9537366548042705,
+      "split2_train_accuracy": 0.9537366548042705,
+      "split3_train_accuracy": 0.9857651245551602,
+      "split4_train_accuracy": 0.9786476868327402,
+      "mean_train_accuracy": 0.9658057956278597,
+      "std_train_accuracy": 0.013635716369742756,
+      "split0_test_roc_auc": 0.8961538461538462,
+      "split1_test_roc_auc": 0.9324444444444445,
+      "split2_test_roc_auc": 0.8831111111111112,
+      "split3_test_roc_auc": 0.9444444444444444,
+      "split4_test_roc_auc": 0.8502222222222222,
+      "mean_test_roc_auc": 0.9012752136752138,
+      "std_test_roc_auc": 0.03405194383732017,
+      "rank_test_roc_auc": 31,
+      "split0_train_roc_auc": 0.9563333333333334,
+      "split1_train_roc_auc": 0.9576457645764577,
+      "split2_train_roc_auc": 0.9462871287128712,
+      "split3_train_roc_auc": 0.9918316831683168,
+      "split4_train_roc_auc": 0.9785478547854785,
+      "mean_train_roc_auc": 0.9661291529152916,
+      "std_train_roc_auc": 0.016592022787999264
+    }
+  }
+}

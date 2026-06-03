@@ -1,0 +1,288 @@
+{
+  "model": "SVM",
+  "iteration": "iteration_6",
+  "note": "Threshold-tuned SVM. The model is fixed to StandardScaler + RBF SVC (C=3.0, gamma=0.03, class_weight='balanced'), and the decision threshold is selected by inner 5-fold out-of-fold macro F1.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "SVM",
+    "iteration": "iteration_6",
+    "seed": 42,
+    "train_accuracy": 0.9785714285714285,
+    "train_precision": 0.9887005649717514,
+    "train_recall": 0.9776536312849162,
+    "train_f1": 0.9831460674157303,
+    "train_roc_auc": 0.9988384313291664,
+    "test_accuracy": 0.9577464788732394,
+    "test_precision": 0.9777777777777777,
+    "test_recall": 0.9565217391304348,
+    "test_f1": 0.967032967032967,
+    "test_roc_auc": 0.9765217391304348
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "threshold_selection": {
+    "fixed_model": {
+      "pipeline": "StandardScaler + RBF SVC",
+      "C": 3.0,
+      "gamma": 0.03,
+      "class_weight": "balanced"
+    },
+    "threshold_selection": "5-fold out-of-fold decision_function scores on the training data of each fit",
+    "reference_full_data_oof": {
+      "candidate_count": 353,
+      "best_threshold_metrics": {
+        "threshold": 0.0,
+        "macro_f1": 0.9563556913457439,
+        "accuracy": 0.9601139601139601,
+        "b_recall": 0.9285714285714286,
+        "b_f1": 0.9435483870967742,
+        "g_recall": 0.9777777777777777,
+        "g_f1": 0.9691629955947136
+      },
+      "default_threshold_metrics": {
+        "threshold": 0.0,
+        "macro_f1": 0.9563556913457439,
+        "accuracy": 0.9601139601139601,
+        "b_recall": 0.9285714285714286,
+        "b_f1": 0.9435483870967742,
+        "g_recall": 0.9777777777777777,
+        "g_f1": 0.9691629955947136
+      }
+    }
+  },
+  "detailed_metric_outputs": {
+    "single_split": "detailed_single_split_metrics.csv",
+    "cv_metrics": "detailed_cv_metrics.csv",
+    "cv_summary": "detailed_cv_summary.csv",
+    "repeated_split_metrics": "detailed_repeated_split_metrics.csv",
+    "repeated_split_summary": "detailed_repeated_split_summary.csv"
+  },
+  "detailed_metric_summary": {
+    "single_split": {
+      "model": "SVM",
+      "iteration": "iteration_6",
+      "seed": 42,
+      "selected_threshold": 0.12075435749225794,
+      "threshold_train_macro_f1": 0.9490987400539777,
+      "threshold_default_macro_f1": 0.9409905163329821,
+      "train_accuracy": 0.9785714285714285,
+      "train_macro_f1": 0.976867151354924,
+      "train_b_recall": 0.9801980198019802,
+      "train_b_f1": 0.9705882352941176,
+      "train_g_recall": 0.9776536312849162,
+      "train_g_f1": 0.9831460674157303,
+      "train_roc_auc": 0.9988384313291664,
+      "test_accuracy": 0.9577464788732394,
+      "test_macro_f1": 0.9541047188106011,
+      "test_b_recall": 0.96,
+      "test_b_f1": 0.9411764705882353,
+      "test_g_recall": 0.9565217391304348,
+      "test_g_f1": 0.967032967032967,
+      "test_roc_auc": 0.9765217391304348
+    },
+    "cv_summary": [
+      {
+        "metric": "seed",
+        "cv_mean": 42.0,
+        "cv_std": 0.0
+      },
+      {
+        "metric": "selected_threshold",
+        "cv_mean": 0.19457844506371166,
+        "cv_std": 0.14584878191108766
+      },
+      {
+        "metric": "threshold_train_macro_f1",
+        "cv_mean": 0.9486938297620627,
+        "cv_std": 0.0033419624782004284
+      },
+      {
+        "metric": "threshold_default_macro_f1",
+        "cv_mean": 0.9418298056136745,
+        "cv_std": 0.0034283296385764963
+      },
+      {
+        "metric": "train_accuracy",
+        "cv_mean": 0.9800559227249618,
+        "cv_std": 0.0019633602285351642
+      },
+      {
+        "metric": "train_macro_f1",
+        "cv_mean": 0.9784042110343837,
+        "cv_std": 0.002152742095295034
+      },
+      {
+        "metric": "train_b_recall",
+        "cv_mean": 0.9801584158415843,
+        "cv_std": 0.00700161730164834
+      },
+      {
+        "metric": "train_b_f1",
+        "cv_mean": 0.9724323017851395,
+        "cv_std": 0.0027947476739182933
+      },
+      {
+        "metric": "train_g_recall",
+        "cv_mean": 0.9799999999999999,
+        "cv_std": 0.0030429030972509118
+      },
+      {
+        "metric": "train_g_f1",
+        "cv_mean": 0.984376120283628,
+        "cv_std": 0.0015136209928003608
+      },
+      {
+        "metric": "train_roc_auc",
+        "cv_mean": 0.9958946094609461,
+        "cv_std": 0.002272800711668044
+      },
+      {
+        "metric": "test_accuracy",
+        "cv_mean": 0.9543259557344065,
+        "cv_std": 0.03262505808084345
+      },
+      {
+        "metric": "test_macro_f1",
+        "cv_mean": 0.9507988634797184,
+        "cv_std": 0.03375317826176399
+      },
+      {
+        "metric": "test_b_recall",
+        "cv_mean": 0.9363076923076923,
+        "cv_std": 0.02233685096970033
+      },
+      {
+        "metric": "test_b_f1",
+        "cv_mean": 0.9378007566663029,
+        "cv_std": 0.04022459656778122
+      },
+      {
+        "metric": "test_g_recall",
+        "cv_mean": 0.9644444444444445,
+        "cv_std": 0.05577733510227169
+      },
+      {
+        "metric": "test_g_f1",
+        "cv_mean": 0.9637969702931339,
+        "cv_std": 0.02736653430976457
+      },
+      {
+        "metric": "test_roc_auc",
+        "cv_mean": 0.9822358974358973,
+        "cv_std": 0.01691678377334131
+      }
+    ],
+    "repeated_summary": [
+      {
+        "metric": "seed",
+        "repeated_mean": 2.0,
+        "repeated_std": 1.5811388300841898
+      },
+      {
+        "metric": "selected_threshold",
+        "repeated_mean": 0.15074440385126073,
+        "repeated_std": 0.15856505829463288
+      },
+      {
+        "metric": "threshold_train_macro_f1",
+        "repeated_mean": 0.9532212517784677,
+        "repeated_std": 0.005011856877511583
+      },
+      {
+        "metric": "threshold_default_macro_f1",
+        "repeated_mean": 0.9424413154618744,
+        "repeated_std": 0.008263059196554194
+      },
+      {
+        "metric": "train_accuracy",
+        "repeated_mean": 0.9814285714285715,
+        "repeated_std": 0.002988071523336013
+      },
+      {
+        "metric": "train_macro_f1",
+        "repeated_mean": 0.9799185464621226,
+        "repeated_std": 0.0032163031936871967
+      },
+      {
+        "metric": "train_b_recall",
+        "repeated_mean": 0.9801980198019802,
+        "repeated_std": 0.007001057239470774
+      },
+      {
+        "metric": "train_b_f1",
+        "repeated_mean": 0.9744124927377023,
+        "repeated_std": 0.004075194368948538
+      },
+      {
+        "metric": "train_g_recall",
+        "repeated_mean": 0.982122905027933,
+        "repeated_std": 0.00467407836052555
+      },
+      {
+        "metric": "train_g_f1",
+        "repeated_mean": 0.9854246001865427,
+        "repeated_std": 0.002360066664824606
+      },
+      {
+        "metric": "train_roc_auc",
+        "repeated_mean": 0.9960174788428564,
+        "repeated_std": 0.001878600331626934
+      },
+      {
+        "metric": "test_accuracy",
+        "repeated_mean": 0.9661971830985916,
+        "repeated_std": 0.01259756607042139
+      },
+      {
+        "metric": "test_macro_f1",
+        "repeated_mean": 0.9629399716875998,
+        "repeated_std": 0.013892639161468004
+      },
+      {
+        "metric": "test_b_recall",
+        "repeated_mean": 0.952,
+        "repeated_std": 0.033466401061363
+      },
+      {
+        "metric": "test_b_f1",
+        "repeated_mean": 0.9519715578539107,
+        "repeated_std": 0.01816047017417482
+      },
+      {
+        "metric": "test_g_recall",
+        "repeated_mean": 0.9739130434782609,
+        "repeated_std": 0.018188261446392934
+      },
+      {
+        "metric": "test_g_f1",
+        "repeated_mean": 0.9739083855212888,
+        "repeated_std": 0.009664062916204953
+      },
+      {
+        "metric": "test_roc_auc",
+        "repeated_mean": 0.987304347826087,
+        "repeated_std": 0.008421773921950067
+      }
+    ]
+  }
+}

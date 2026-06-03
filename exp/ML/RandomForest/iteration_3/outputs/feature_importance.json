@@ -1,0 +1,44 @@
+{
+  "top_features": [
+    {
+      "feature": "f5",
+      "importance": 0.20055868788046033
+    },
+    {
+      "feature": "f27",
+      "importance": 0.12736882783338085
+    },
+    {
+      "feature": "f3",
+      "importance": 0.11365931604089162
+    },
+    {
+      "feature": "f7",
+      "importance": 0.10060110241165135
+    },
+    {
+      "feature": "f8",
+      "importance": 0.04644211078026548
+    },
+    {
+      "feature": "f6",
+      "importance": 0.04091180123975275
+    },
+    {
+      "feature": "f4",
+      "importance": 0.032108130860116324
+    },
+    {
+      "feature": "f14",
+      "importance": 0.025039098282530956
+    },
+    {
+      "feature": "f22",
+      "importance": 0.02154224640697027
+    },
+    {
+      "feature": "f1",
+      "importance": 0.021487403732987187
+    }
+  ]
+}

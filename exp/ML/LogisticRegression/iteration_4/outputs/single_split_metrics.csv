@@ -1,0 +1,2 @@
+﻿model,iteration,seed,train_accuracy,train_precision,train_recall,train_f1,train_roc_auc,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc
+LogisticRegression,iteration_4,42,0.9928571428571429,0.994413407821229,0.994413407821229,0.994413407821229,0.9998893744123015,0.9577464788732394,0.9387755102040817,1.0,0.968421052631579,0.9921739130434782

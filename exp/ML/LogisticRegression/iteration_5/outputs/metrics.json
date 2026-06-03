@@ -1,0 +1,54 @@
+{
+  "model": "LogisticRegression_interaction",
+  "iteration": "iteration_5",
+  "note": "LogisticRegression interaction_only (degree=2, no squared terms). GridSearchCV over L1/L2/ElasticNet. Best params: {'clf__C': 0.01, 'clf__l1_ratio': None, 'clf__penalty': 'l2'}. Polynomial features: 561.",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "labels": [
+    "b",
+    "g"
+  ],
+  "positive_label": "g",
+  "data": {
+    "sample_count": 351,
+    "feature_count": 34,
+    "label_counts": {
+      "b": 126,
+      "g": 225
+    }
+  },
+  "single_split_metrics": {
+    "model": "LogisticRegression_interaction",
+    "iteration": "iteration_5",
+    "seed": 42,
+    "train_accuracy": 0.9464285714285714,
+    "train_precision": 0.9505494505494505,
+    "train_recall": 0.9664804469273743,
+    "train_f1": 0.9584487534626038,
+    "train_roc_auc": 0.9893246307871011,
+    "test_accuracy": 0.9295774647887324,
+    "test_precision": 0.9183673469387755,
+    "test_recall": 0.9782608695652174,
+    "test_f1": 0.9473684210526315,
+    "test_roc_auc": 0.98
+  },
+  "cv_folds": 5,
+  "repeated_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model_selection": {
+    "polynomial_degree": 2,
+    "interaction_only": true,
+    "best_params": {
+      "clf__C": 0.01,
+      "clf__l1_ratio": null,
+      "clf__penalty": "l2"
+    },
+    "best_cv_macro_f1": 0.9002448748172241,
+    "n_polynomial_features": 561
+  }
+}
