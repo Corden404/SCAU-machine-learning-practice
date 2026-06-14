@@ -9,8 +9,14 @@
 !*.py
 !**/*.py
 
+config/*.local.json
+config/paths.local.json
+config/paths.codex.local.json
 data/
 PetImages/
+.trash/
+presentation/
+presentations/
 __pycache__/
 *.pyc
 *.log
