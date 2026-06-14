@@ -1,70 +1,69 @@
 # 人工智能综合实训 II
 
-本项目用于完成机器学习实训中的两个实验任务：
+本仓库用于整理机器学习实训中的两个实验方向：
 
-- **任务一：Ionosphere 传统机器学习分类**  
-  使用逻辑回归、SVM、决策树、随机森林、AdaBoost 等模型完成二分类实验，并比较不同模型的效果。
-- **任务二：Cats vs. Dogs 图像分类**  
-  手动实现 AlexNet，对猫狗图片进行训练、验证和测试，并记录调参、改进与反思过程。
+- **Ionosphere 传统机器学习分类**：围绕逻辑回归、SVM、决策树、随机森林、AdaBoost 与集成模型，比较单次划分、交叉验证和多随机种子重复划分下的表现。
+- **Cats vs. Dogs AlexNet 图像分类**：手写并迭代 AlexNet 及其改进结构，结合数据清洗、固定 manifest 划分、训练曲线、混淆矩阵和错误样本分析说明模型改进依据。
 
-## 当前进度
-
-- 已建立本地数据路径配置机制，代码不硬编码本机绝对路径。
-- 已完成 Ionosphere 与 Cats vs. Dogs 的数据预分析。
-- 已为 Cats vs. Dogs 建立异常图片检测流程：规则筛查、Isolation Forest、KMeans 距离与人工审核。
-- 已制作异常图片静态审核包，方便分发给合作人审核。
-- 已完成一轮重复图片候选检测与人工审核记录。
-- 下一步应把异常、损坏、重复图片的处理结果合并为可复现的训练清单，再开始正式建模实验。
-
-## 目录说明
+## 目录结构
 
 ```text
 .
-├── Readme.md                         # 项目入口说明
-├── 流程.md                           # 实训总体流程
+├── Readme.md
 ├── config/
-│   ├── paths.example.json             # 可提交的路径配置模板
-│   └── paths.local.json               # 本机私有路径配置，不提交
+│   └── paths.example.json            # 可提交的本地路径配置模板
 ├── src/
-│   ├── project_config.py              # 统一读取本地数据路径
-│   ├── data_preanalysis.py            # 数据预分析脚本
-│   ├── cats_anomaly_detection.py      # 猫狗异常图片候选检测
-│   ├── cats_anomaly_review_gui.py     # 本地异常图片审核 Web 工具
-│   ├── build_static_review_package.py # 生成异常图片静态审核包
-│   └── build_duplicate_review_package.py # 生成重复图片审核包
-├── docs/                              # 工作总结、分析记录等本地文档，不提交
-├── exp/                               # 实验代码目录，仅提交其中的 .py 脚本
-└── data/                              # 清洗中间结果、审核结果等本地数据
+│   ├── project_config.py             # 读取本地数据路径配置
+│   ├── data_preanalysis.py           # Ionosphere 与 Cats vs. Dogs 数据预分析
+│   ├── cats_anomaly_detection.py     # 猫狗异常图片候选检测
+│   ├── cats_anomaly_review_gui.py    # 本地异常图片审核 Web 工具
+│   ├── build_static_review_package.py
+│   ├── build_duplicate_review_package.py
+│   └── mimo_batch_review.py          # 可选的多模态辅助审核请求生成/调用
+├── exp/
+│   ├── ML/                           # 传统机器学习实验代码、记录和结果
+│   └── AlexNet/                      # AlexNet 训练、模型、迭代与历史脚本
+├── docs/                             # 本地过程文档，忽略
+├── data/                             # 本地数据与清洗中间结果，忽略
+└── presentation/                     # 汇报材料产物，忽略
 ```
 
-## 数据质量策略
+## 实验说明
 
-本项目不直接删除原始图片。损坏图、异常图、重复图都应通过清单标记并在训练时排除或保留。
+### Ionosphere
 
-当前建议：
-
-- **损坏图片**：记录并排除。
-- **明确异常图片**：人工确认后排除，例如纯文字图、空白图、无猫狗主体、标签明显错误。
-- **真实猫狗图片**：即使有白边、背景复杂、主体较小、光照较差、抠图背景等情况，也优先保留。
-- **同标签重复图片**：每组保留一张，其余训练时排除，避免重复样本影响评估。
-- **跨标签重复图片**：优先整组排除，避免标签冲突污染训练和测试。
-
-后续训练应基于 manifest 文件，而不是直接扫描原始目录。
-
-## 已知数据结论
-
-Ionosphere：
+数据集特点：
 
 - 样本数 351，特征数 34，二分类。
 - 类别分布为 `b=126`、`g=225`。
 - 无缺失值，有 1 条完全重复样本。
 - 存在常量特征 `f2`。
-- 样本量较小，后续评估应使用分层划分、交叉验证和多随机种子。
+- 样本量较小，因此实验重点是评估稳定性，而不是只看单次划分分数。
 
-Cats vs. Dogs：
+主要代码位于：
 
-- 图片文件共 25000 张，其中 24998 张可正常读取。
-- 已发现 2 张损坏图片。
-- Cat 与 Dog 各 12500 张，类别整体平衡。
-- 图片模式和尺寸不完全统一，训练前需要统一转为 RGB 并 resize/crop 到模型输入尺寸。
-- 数据集中存在纯文字、低信息、重复、跨标签重复等质量问题，已经建立候选检测与人工审核流程。
+- `exp/ML/LogisticRegression/`
+- `exp/ML/SVM/`
+- `exp/ML/DecisionTree/`
+- `exp/ML/RandomForest/`
+- `exp/ML/AdaBoost/`
+- `exp/ML/model_comparison/`
+- `exp/ML/Ensemble/`
+
+### Cats vs. Dogs / AlexNet
+
+数据处理策略：
+
+- 不直接删除原始图片。
+- 损坏图、异常图、重复图通过清单记录。
+- 训练应基于 manifest 文件，而不是直接扫描原始目录。
+- 真实猫狗图片即使存在白边、复杂背景、主体较小、光照较差等情况，也优先保留。
+- 跨标签重复或标签明显错误的图片应在训练清单中排除。
+
+AlexNet 代码位于 `exp/AlexNet/`：
+
+- `model.py`：模型结构定义。
+- `common.py`：训练、manifest、评估、路径脱敏等公共逻辑。
+- `iteration_*/run.py`：各轮迭代入口。
+- `legacy/original_scripts/`：早期脚本归档。
+
